@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document creation and remove</title>
 </head>
-<body>
+
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
     
 </body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Typesscript")
+    addLanguage("Python")
+</script>
 </html>
