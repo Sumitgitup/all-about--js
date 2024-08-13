@@ -21,5 +21,19 @@
     addLanguage("Typesscript")
     addLanguage("Python")
     addLanguage("Java")
+
+    function addOptiLanguage (langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+    addOptiLanguage('kotlin')
+    // Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "TikTok"
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
 </script>
 </html>
